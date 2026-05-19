@@ -9,7 +9,7 @@ I built the project so it can be opened directly in Android Studio and run on an
 - A clean start screen where the player can choose difficulty and card theme before starting.
 - Easy, Medium, and Hard modes with different numbers of card pairs.
 - Four card themes: Classic, Space, Nature, and Cafe.
-- Real photo-style picture assets for the Classic theme.
+- Real photo-style picture assets for every theme.
 - Animated card flipping and patterned card backs.
 - Pause/resume support. When the game is paused, the cards are hidden.
 - Timer, move counter, pair progress, restart button, and best score display.
@@ -120,16 +120,10 @@ memory_matching_game/
 |   |-- icons/
 |   |   `-- app_icon.png
 |   `-- images/
-|       |-- anchor.png
-|       |-- bolt.png
-|       |-- camera.png
-|       |-- compass.png
-|       |-- leaf.png
-|       |-- moon.png
-|       |-- rocket.png
-|       |-- star.png
-|       |-- sun.png
-|       `-- wave.png
+|       |-- anchor.png, bolt.png, camera.png, compass.png, ...
+|       |-- space_rocket.png, space_planet.png, space_star.png, ...
+|       |-- nature_leaf.png, nature_flower.png, nature_tree.png, ...
+|       `-- cafe_pizza.png, cafe_cake.png, cafe_coffee.png, ...
 |-- ios/
 |-- lib/
 |   |-- main.dart
