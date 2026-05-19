@@ -150,6 +150,8 @@ class _CardFront extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final asset = visual.asset;
+
     return DecoratedBox(
       decoration: BoxDecoration(
         color: Colors.white,
@@ -172,24 +174,26 @@ class _CardFront extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  color: visual.accent.withValues(alpha: .18),
-                  shape: BoxShape.circle,
-                ),
-                child: Center(
-                  child: visual.asset == null
-                      ? Icon(visual.icon, size: 46, color: visual.color)
-                      : Padding(
-                          padding: const EdgeInsets.all(12),
-                          child: Image.asset(
-                            visual.asset!,
-                            fit: BoxFit.contain,
-                            semanticLabel: visual.label,
-                          ),
-                        ),
-                ),
-              ),
+              child: asset == null
+                  ? DecoratedBox(
+                      decoration: BoxDecoration(
+                        color: visual.accent.withValues(alpha: .18),
+                        shape: BoxShape.circle,
+                      ),
+                      child: Center(
+                        child: Icon(visual.icon, size: 46, color: visual.color),
+                      ),
+                    )
+                  : ClipRRect(
+                      borderRadius: BorderRadius.circular(6),
+                      child: Image.asset(
+                        asset,
+                        fit: BoxFit.cover,
+                        width: double.infinity,
+                        height: double.infinity,
+                        semanticLabel: visual.label,
+                      ),
+                    ),
             ),
             const SizedBox(height: 8),
             FittedBox(

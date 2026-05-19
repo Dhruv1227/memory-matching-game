@@ -9,7 +9,7 @@ I built the project so it can be opened directly in Android Studio and run on an
 - A clean start screen where the player can choose difficulty and card theme before starting.
 - Easy, Medium, and Hard modes with different numbers of card pairs.
 - Four card themes: Classic, Space, Nature, and Cafe.
-- Local image assets for the Classic theme.
+- Real photo-style picture assets for the Classic theme.
 - Animated card flipping and patterned card backs.
 - Pause/resume support. When the game is paused, the cards are hidden.
 - Timer, move counter, pair progress, restart button, and best score display.
