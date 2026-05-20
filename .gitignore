@@ -52,4 +52,12 @@ app.*.map.json
 
 # Local submission/build artifacts
 memory_matching_game_solution.zip
-./README.pdf
+README.pdf
+*.apk
+*.aab
+*.ipa
+
+# Local Flutter/Android Studio metadata
+.flutter-plugins
+*.jks
+*.keystore
