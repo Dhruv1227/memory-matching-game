@@ -187,9 +187,3 @@ The project was checked with:
 - `flutter analyze`: passed with no issues.
 - `flutter test`: passed.
 - `flutter build apk --debug`: Android debug APK built successfully.
-
-## Submission Notes
-
-For submission, use `memory_matching_game_solution.zip`. It includes the Flutter project source, Dart files, Android project files, image assets, screenshots, `README.md`, and `README.pdf`.
-
-For the GitHub requirement, upload the full project folder to a public GitHub repository.
