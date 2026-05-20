@@ -52,4 +52,4 @@ app.*.map.json
 
 # Local submission/build artifacts
 memory_matching_game_solution.zip
-./readme.pdf
+./README.pdf
